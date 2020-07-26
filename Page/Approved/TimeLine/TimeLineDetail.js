@@ -9,7 +9,7 @@ import {
     FlatList
   } from 'react-native';
   
-
+ 
 class TimeLineDetail extends Component {
     
     constructor(props) {
@@ -34,7 +34,7 @@ class TimeLineDetail extends Component {
                     <Card style={{flex: 0}}>
                         <CardItem>
                         <Left>
-                            <Thumbnail source= {require('../../image/test.jpeg')} />
+                            <Thumbnail source= {require('../../../image/test.jpeg')} />
                             <Body>
                             <Text>NativeBase</Text>
                             <Text note>April 15, 2016</Text>

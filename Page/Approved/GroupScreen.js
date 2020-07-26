@@ -6,7 +6,7 @@ function GroupScreen() {
           <List>
             <ListItem thumbnail>
               <Left>
-                <Thumbnail square source= {require('../image/test.jpeg')} />
+                <Thumbnail square source= {require('../../image/test.jpeg')} />
               </Left>
               <Body>
                 <Text>1번모임</Text>
@@ -20,7 +20,7 @@ function GroupScreen() {
             </ListItem>
             <ListItem thumbnail>
               <Left>
-                <Thumbnail square source= {require('../image/test.jpeg')} />
+                <Thumbnail square source= {require('../../image/test.jpeg')} />
               </Left>
               <Body>
                 <Text>1번모임</Text>
@@ -34,7 +34,7 @@ function GroupScreen() {
             </ListItem>
             <ListItem thumbnail>
               <Left>
-                <Thumbnail square source= {require('../image/test.jpeg')} />
+                <Thumbnail square source= {require('../../image/test.jpeg')} />
               </Left>
               <Body>
                 <Text>1번모임</Text>
