@@ -10,7 +10,7 @@ function HomeScreen({navigation}) {
           <Card>
             <CardItem> 
               <Left>
-                <Thumbnail source= {require('../image/test.jpeg')} />
+                <Thumbnail source= {require('../../image/test.jpeg')} />
                 <Body>
                   <Text>NativeBase</Text>
                   <Text note>GeekyAnts</Text>
@@ -20,7 +20,7 @@ function HomeScreen({navigation}) {
             <TouchableOpacity onPress={() => navigation.navigate('TimeLineDetail')}>
                 <CardItem cardBody>
                     <Image 
-                        source= {require('../image/test.jpeg')} style={{height: 200, width: null, flex: 1}} >
+                        source= {require('../../image/test.jpeg')} style={{height: 200, width: null, flex: 1}} >
                     </Image>
                 </CardItem>
             </TouchableOpacity>
@@ -45,7 +45,7 @@ function HomeScreen({navigation}) {
           <Card>
             <CardItem> 
               <Left>
-                <Thumbnail source= {require('../image/test.jpeg')} />
+                <Thumbnail source= {require('../../image/test.jpeg')} />
                 <Body>
                   <Text>NativeBase</Text>
                   <Text note>GeekyAnts</Text>
@@ -53,7 +53,7 @@ function HomeScreen({navigation}) {
               </Left>
             </CardItem>
             <CardItem cardBody>
-              <Image source= {require('../image/test.jpeg')} style={{height: 200, width: null, flex: 1}}/>
+              <Image source= {require('../../image/test.jpeg')} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem>
               <Left>
@@ -76,7 +76,7 @@ function HomeScreen({navigation}) {
           <Card>
             <CardItem> 
               <Left>
-                <Thumbnail source= {require('../image/test.jpeg')} />
+                <Thumbnail source= {require('../../image/test.jpeg')} />
                 <Body>
                   <Text>NativeBase</Text>
                   <Text note>GeekyAnts</Text>
@@ -84,7 +84,7 @@ function HomeScreen({navigation}) {
               </Left>
             </CardItem>
             <CardItem cardBody>
-              <Image source= {require('../image/test.jpeg')} style={{height: 200, width: null, flex: 1}}/>
+              <Image source= {require('../../image/test.jpeg')} style={{height: 200, width: null, flex: 1}}/>
             </CardItem>
             <CardItem>
               <Left>

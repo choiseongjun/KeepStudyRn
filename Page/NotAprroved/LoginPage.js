@@ -1,10 +1,10 @@
 import React from 'react';
-import {View,Text,StyleSheet,Image,TextInput} from 'react-native';
-import {button, Button} from 'react-native-paper';
-function LoginPage (navigation){
+import {View,Text,StyleSheet,Image,TextInput,TouchableOpacity} from 'react-native';
+import { Button} from 'native-base';
+function LoginPage ({navigation}){
     return(
         <View style={styles.container}>
-            <Image source={require('../image/logo.png')} style={styles.logoImage}/>
+            <Image source={require('../../image/logo.png')} style={styles.logoImage}/>
             <TextInput 
                 style={styles.idBox}
                 placeholder={"Email"}
@@ -13,8 +13,10 @@ function LoginPage (navigation){
                 style={styles.pwBox}
                 placeholder={"Password"}
             />
-            <Button mode="contained" onPress={() => navigation.navigate('Feed')} style={styles.loginButton}>
-                Login
+            <Button style={styles.loginButton} >
+                <TouchableOpacity onPress={() => navigation.navigate('Home')}>
+                    <Text style={styles.loginButtonText}>Login</Text>
+                </TouchableOpacity>
             </Button>
         </View>
     );
@@ -49,7 +51,13 @@ const styles = StyleSheet.create({
         width:300,
         marginTop:30,
         backgroundColor:'green',
+        justifyContent: 'center', 
+        alignItems: 'center'
         
+    },
+    loginButtonText:{
+        color:'white',
+        fontSize:30
     }
 })
 export default LoginPage;
