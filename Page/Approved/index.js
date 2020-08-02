@@ -4,6 +4,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './HomeScreen';
 import GroupScreen from './GroupScreen';
+import OptionScreen from './OptionScreen';
+import GroupDetailScreen from './GroupDetailScreen';
 import TimeLineDetail from '../Approved/TimeLine/TimeLineDetail';
 
 const Tab = createBottomTabNavigator();
@@ -13,6 +15,7 @@ function Home() {
       <Tab.Navigator>
         <Tab.Screen name="Feed" component={HomeScreen} />
         <Tab.Screen name="Group" component={GroupScreen} />
+        <Stack.Screen name="Option" component={OptionScreen} />
       </Tab.Navigator>
     );
   }
@@ -24,6 +27,7 @@ export const Approved = ({}) => {
                 <Stack.Screen name="Feed" component={Home} />
                 <Stack.Screen name="TimeLineDetail" component={TimeLineDetail} />
                 <Stack.Screen name="Group" component={GroupScreen} />
+                <Stack.Screen name="GroupDetail" component={GroupDetailScreen} />
             </Stack.Navigator>
             </NavigationContainer>
         </>
