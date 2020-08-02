@@ -1,6 +1,8 @@
 import React from 'react';
 import { Image,ScrollView,TouchableOpacity } from 'react-native';
 import { Container, Header, Content, Card, CardItem, Thumbnail, Text, Button, Icon, Left, Body, Right } from 'native-base';
+import CreateFabs from '../Script/CreateFabs';
+import {FloatingAction} from 'react-native-floating-action';
 
 function HomeScreen({navigation}) {
     return (
@@ -105,6 +107,25 @@ function HomeScreen({navigation}) {
             </CardItem>
           </Card>
         </ScrollView>
+        {/* <CreateFabs
+          onPressItem={(name) => {
+            navigation.navigate('CreatePostScreen');
+          }}
+        /> */} 
+        <FloatingAction
+          actions={[
+            {
+              text: 'Accessibility',
+              icon: require('../../image/add.png'),
+              name: 'bt_accessibility',
+              position: 1,
+            },
+          ]}
+          overrideWithAction
+          onPressItem={(name) => {
+            navigation.navigate('CreatePostScreen');
+          }}
+        />
       </Container>
     );
   }

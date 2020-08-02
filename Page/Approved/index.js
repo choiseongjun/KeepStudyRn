@@ -5,6 +5,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './HomeScreen';
 import GroupScreen from './GroupScreen';
 import OptionScreen from './OptionScreen';
+import CreatePostScreen from './CreatePostScreen';
+import CreateFabs from '../Script/CreateFabs';
 import GroupDetailScreen from './GroupDetailScreen';
 import TimeLineDetail from '../Approved/TimeLine/TimeLineDetail';
 
@@ -28,6 +30,8 @@ export const Approved = ({}) => {
                 <Stack.Screen name="TimeLineDetail" component={TimeLineDetail} />
                 <Stack.Screen name="Group" component={GroupScreen} />
                 <Stack.Screen name="GroupDetail" component={GroupDetailScreen} />
+                <Stack.Screen name="CreatePostScreen" component={CreatePostScreen} />
+                <Stack.Screen name="CreateFabs" component={CreateFabs} />
             </Stack.Navigator>
             </NavigationContainer>
         </>
